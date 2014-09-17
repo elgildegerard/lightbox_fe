@@ -18,7 +18,7 @@ body {
     width: 400px;
     height: 150px;
     text-align: center;
-    
+
     a {
         border: $border; 
         border-radius: 5px;
@@ -28,14 +28,14 @@ body {
         color: white;
         display: block;
         width: 200px;
-        
-    &:hover {
-        background-color: white; 
-        color: $rosa;
+
+        &:hover {
+            background-color: white; 
+            color: $rosa;
+        }
+
     }
-        
-    }
-    
+
     h3 {
         margin: 30px auto;
     }
@@ -49,33 +49,31 @@ body {
     left: 0;
     background-color: rgba(0, 0, 0, .5);
     z-index: 1;
-    
-        
-    div {
-        position: relative;
-        width: 600px;
-        height: 300px;
-        background-color: $rosa;
-        border: $border;
-        border-radius: 5px;
-        margin: 100px auto;
-        padding: 10px;
-        text-align: center;
-        
-        a {
-            float: right;
-            text-decoration: none;
-            color: white;             
-        }
-        
-        h3 {
-            margin: 100px auto 10px auto;
-        }
-        
-        
-    }
 }
 
 
+.lightbox {
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    width: 600px;
+    height: 300px;
+    background-color: $rosa;
+    border: $border;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
+
+    a {
+        float: right;
+        text-decoration: none;
+        color: white;             
+    }
+
+    h3 {
+        margin: 100px auto 10px auto;
+    }
 
 
+}    
